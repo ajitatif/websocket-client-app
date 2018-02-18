@@ -1,0 +1,19 @@
+<div id="room">
+  <div id="userInfo">Selam {{ nickName }}, n'aber?</div>
+  <div id="roomHeader">O onu dedi, bu bunu dedi</div>
+  <div id="messageList" class="container">
+  	<div *ngFor="let message of messageHistory" class="row">
+  		<div class="message">
+  			<div class="messageDate">{{ message.timeReceived }}</div>
+	  		<span class="messageFrom">@{{ message.nickName }}</span>: 
+	  		<span class="messageText">{{ message.message }}</span>
+		</div>
+  	</div>
+  </div>
+  <div id="messageSend">
+    <form id="frmMessage" #theForm="ngForm" (ngSubmit)="say()">
+      <input type="text" autocomplete="off" name="messageText" [(ngModel)]="message"/>
+      <input type="submit" name="submit" class="btn btn-primary" value="De bunu" />
+    </form>
+  </div>
+</div>

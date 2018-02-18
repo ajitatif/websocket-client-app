@@ -1,0 +1,39 @@
+#room {
+	width: 100%;
+	border: 1px solid #000000;
+	padding: 3px;
+	background-color: #eeeeee;
+}
+
+#messageList {
+	width: 100%;
+	border: 1px solid #cccccc;
+}
+
+#frmMessage {
+	display: grid;
+	grid-template-columns: 1fr 150px;
+	border: 1px solid #cccccc;
+	margin-top: 5px;
+}
+
+#frmMessage input[name="messageText"] {
+	grid-column: 1;
+}
+
+.message {
+	margin: 5px 0px;
+}
+
+.messageDate {
+	color: #cccccc;
+	font-style: italic;
+}
+
+.messageFrom {
+	font-weight: bold;
+}
+
+.messageText {
+
+}
