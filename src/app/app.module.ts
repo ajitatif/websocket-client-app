@@ -12,7 +12,7 @@ import { RoomComponent } from './room/room.component';
 
 const stompConfig: StompConfig = {
   // Which server?
-  url: 'ws://127.0.0.1:8080/chatWS/websocket',
+  url: 'ws://127.0.0.1:8080/chatWS',
 
   // Headers
   // Typical keys: login, passcode, host
