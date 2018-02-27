@@ -1,4 +1,4 @@
 export class ChatMessage {
 
-	constructor(public nickName: string, public message: string) { }
+	constructor(public nickName: string, public message: string, public timeReceived: Date) { }
 }
